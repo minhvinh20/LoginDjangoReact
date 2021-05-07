@@ -1,24 +1,21 @@
 # Guideline to run project
-
-## Create env python for project
+# For Docker Env
+docker-compose -f docker-compose-dev.yml up --build
+# For Local Env
+### Create env python for project
 cd backend
 
 virtualenv venv
 
 source venv/bin/activate
 
-
-## install requirements.txt
 pip install -r requirements.txt
 ### runserver
 cd server
 
 python manage.py runserver
 
-
-## Front end
-
-Open new terminal
+## Run FrontEnd
 
 cd frontend
 
